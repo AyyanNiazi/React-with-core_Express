@@ -7,9 +7,9 @@ app.use(cors());
 
 app.get('/api' , (req, res) => {
     // res.send().json({msg: 'hello'})
-    let id = Math.random()
+    // let id = Math.random()
     
-    const data = [{id,user: 'arslan', age: 40}, {id,user: 'ayyan', age: 23}, {id,user: 'john doe', age: 49},]
+    const data = [{id:Math.random(),user: 'arslan', age: 40}, {id:Math.random(),user: 'ayyan', age: 23}, {id:Math.random(),user: 'john doe', age: 49},]
       res.json(data);
 })
 
